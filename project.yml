@@ -1,0 +1,22 @@
+name: RxCombine
+options:
+  bundleIdPrefix: com.rainydayapps
+  deploymentTarget:
+    iOS: 13.0
+settings:
+  base:
+    CODE_SIGN_STYLE: Manual
+    ENABLE_BITCODE: false
+    SUPPORTS_MACCATALYST: false
+    VALID_ARCHS: arm64
+    VALID_ARCHS[sdk=iphonesimulator*]: x86_64
+targets:
+  RxCombine:
+    platform: iOS
+    info:
+      path: Sources/Info.plist
+    dependencies:
+      - carthage: RxSwift
+      - carthage: RxRelay
+    sources: [Sources]
+    type: framework

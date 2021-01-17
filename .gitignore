@@ -17,7 +17,7 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 Package.resolved
-RxCombine.xcodeproj
+# RxCombine.xcodeproj
 
 ## Other
 *.moved-aside
@@ -70,3 +70,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+
+.DS_Store
+Carthage
