@@ -11,6 +11,9 @@ let package = Package(
             name: "RxCombine",
             targets: ["RxCombine"]),
     ],
+    platforms: [
+      .iOS(.14)
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "git@github.com:paulo-bc/RxSwift.git", from: "5.1.3"),
